@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title> Connexion </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<style>
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color:#C4C4C4 ;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0 ;
+	}
+
+	.help {
+		position: absolute;
+		left: 20px;
+	}
+
+	.contact {
+		position: absolute;
+		right: 20px;
+    }
+    
+    h1, h3, h4 {
+        text-align: center ;
+		font-style: bold ;
+		color: red;
+    }
+
+    .titre {
+        text-align: center ;
+    }
+
+    html {
+		position: absolute;
+		height: 100%;
+  		width: 100% ;
+	}
+
+    .terminer {
+        display: flex;
+        justify-content: center;
+    }
+			body {
+	background-image :url("../img/test.jpg") ;
+	background-size:cover;
+	}
+
+  form {
+    /*border: 3px solid black ; */
+    background-color: white ;
+	padding: 20px;
+  }
+
+</style>
+
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="row">
+			  <div class="col-lg-auto">
+				<div class="position-absolute top-50 start-50 translate-middle">
+	<h1>Se Connecter</h1>
+	<p></p>
+	<br />
+	
+<form method="post" action="../controleurs/connecter.php">
+					<div class="mb-3">
+					<p>
+							<label for="selectProfil" class="form-label">Vous êtes : *</label>
+							<Select name="profil">
+								<option value="nulle">Sélectionnez votre profil..</option>
+								<option value="Client">Client</option>
+								<option value="Livreur">Livreur</option>
+							</select>
+					</p>
+					</div>
+					<div class="mb-3">
+					<p>
+						<label for="identifiant" class="form-label">Identifiant : *</label>
+						<input type="text" class="form-control" id="id" name ="id" placeholder="Saisir un identifiant">
+						</p>
+						</div>
+						<div class="mb-3">
+						<p>
+							<label for="mail" class="form-label">Votre adresse e-mail : *</label>
+							<input type="email" class="form-control" id="mail" name="mail" placeholder="Saisir votre adresse email">
+						</p>
+						</div>
+						<div class="mb-3">
+						<p>
+							<label for="lblmdp" class="form-label">Mot de passe : *</label>
+							<input type="password" class="form-control" id="mdp" name="mdp">
+						</p>
+						</div>
+		<p> NB : les champs suivis de * sont obligatoires</p>
+			<p>
+				<input type="submit" class="btn btn-outline-primary" name="connexion" value="Se Connecter >">
+			</p>
+			
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+	
+	<footer>
+		<hr>
+         <a class="help" href="">besoin d'aide?</a>
+         <a class="prod" href="connexionProducteur.html">Espace Producteur</a>
+         <a class="contact" href="">Contacts</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* media query */
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 10px ;
+    }
+ }
+.recap {
+   text-align: center ;
+   font-family: Arial ;
+   border-top: 10px solid #688CD8 ;
+   border-bottom: 10px solid #688CD8 ;
+   background: #E8EFF7 ;
+}
+table, td {
+    border: 1px solid #333 ;
+}
+input[type="submit"] {
+    margin-top: 3% ;
+    background: #688CD8 ;
+    border: 1px solid #eee ;
+    border-radius: 20px ;
+    box-shadow: 5px 5px 5px #eee ;
+    text-shadow: none ;
+}
+input[type="submit"]:hover {
+    background: red ;
+    color: #fff ;
+ }
+.header {
+   border-top: 10px solid #688CD8 ;
+   border-bottom: 10px solid #688CD8 ;
+   background: #E8EFF7 ;
+   font-family: monospace ;
+}
+h3 {
+   color: blue ;
+   font-family: "Arial Black", Gadget, sans-serif;
+}
+body {
+    width: 70% ;
+    margin-left: 15% ;
+    background: rgb(173, 85, 85) ;
+    /* border: 10px solid red ; pour verifier le centrage dun element dans un bloc */
+}
+table {
+    background-color:white ;
+}
+thead {
+    background-color: #333 ;
+    color: #fff ;
+}
+.rouge {
+    color: red ;
+}
+.vert {
+    color: green ;
+}
+.bleu {
+    color: blue ;
+}
